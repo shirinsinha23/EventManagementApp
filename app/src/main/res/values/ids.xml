@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="recyclerViewEvents" type="id"/>
+    <item name="itemEventName" type="id"/>
+    <item name="itemEventDescription" type="id"/>
+    <item name="itemEventDate" type="id"/>
+    <item name="itemEventTime" type="id"/>
+    <item name="eventNameText" type="id"/>
+    <item name="eventDateText" type="id"/>
+    <item name="eventLocationText" type="id"/>
+    <item name="deleteButton" type="id"/>
+    <item name="textTitle" type="id"/>
+    <item name="textDescription" type="id"/>
+    <item name="textDate" type="id"/>
+    <item name="textTime" type="id"/>
+    <item name="etEventName" type="id"/>
+    <item name="etDescription" type="id"/>
+    <item name="etDate" type="id"/>
+    <item name="etTime" type="id"/>
+    <item name="passwordToggle" type="id"/>
+    <item name="textViewForgotPassword" type="id"/>
+    <item name="textViewAttendanceCount" type="id"/>
+    <item name="textViewEventSummary" type="id"/>
+    <item name="textViewRecommendations" type="id"/>
+    <item name="pieChartFeedback" type="id"/>
+</resources>

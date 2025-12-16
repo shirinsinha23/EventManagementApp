@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eventmanagementapp">
+
+    <!-- 🔐 Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+
+    <!-- Optional: to ensure camera usage -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Event Management App"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Eventmanagementapp">
+
+        <!-- 🔐 Authentication Screens -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <!-- 🏠 Home / Dashboard -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+
+        <!-- 📅 Event Management Activities -->
+        <activity
+            android:name=".CreateEventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewEventsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventActivity"
+            android:exported="false" />
+
+        <!-- 🔎 QR Code Activities -->
+        <activity
+            android:name=".ScanQRActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GenerateQRCodeActivity"
+            android:exported="false" />
+
+        <!-- 📋 Attendance Page -->
+        <activity
+            android:name=".AttendanceActivity"
+            android:exported="false" />
+
+        <!-- 🛠️ Admin Dashboard (Optional) -->
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+
+    </application>
+</manifest>

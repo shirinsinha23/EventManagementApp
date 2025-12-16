@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    tools:context=".AdminDashboardActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 📊 Header -->
+        <TextView
+            android:id="@+id/tvDashboardTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Admin Dashboard"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 📅 Events Section -->
+        <TextView
+            android:id="@+id/tvEventsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📅 Events"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewEventSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Events: 0"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="8dp" />
+
+        <ListView
+            android:id="@+id/listViewEvents"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:dividerHeight="4dp"
+            android:background="#F9F9F9"
+            android:layout_marginBottom="16dp" />
+
+        <!-- ✅ Attendance Section -->
+        <TextView
+            android:id="@+id/tvAttendanceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✅ Attendance"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewAttendanceCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Total Attendance Records: 0"
+            android:textColor="#444444"
+            android:textSize="16sp" />
+
+        <ListView
+            android:id="@+id/listViewAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:dividerHeight="4dp"
+            android:background="#F9F9F9"
+            android:layout_marginBottom="16dp" />
+
+        <!-- ⭐ Feedback Section -->
+        <TextView
+            android:id="@+id/tvFeedbackTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐ Feedback &amp; Rating"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvFeedbackSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Average Rating: 0.0"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="8dp" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChartFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 💡 Recommendations Section -->
+        <TextView
+            android:id="@+id/tvRecommendationsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💡 Recommendations"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textViewRecommendations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recommendations will appear here..."
+            android:textSize="15sp"
+            android:textColor="#4A235A"
+            android:padding="8dp"
+            android:background="#F5EEF8"
+            android:layout_marginBottom="8dp" />
+
+        <ListView
+            android:id="@+id/listViewRecommendations"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:dividerHeight="4dp"
+            android:background="#F9F9F9"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 📤 Export CSV -->
+        <Button
+            android:id="@+id/buttonExportCSV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📤 Export Attendance Report"
+            android:background="#2196F3"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+    </LinearLayout>
+</ScrollView>
